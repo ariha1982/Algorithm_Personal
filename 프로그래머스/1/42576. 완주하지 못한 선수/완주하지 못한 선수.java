@@ -6,7 +6,7 @@ class Solution {
         HashMap<String, Integer> isComplete = new HashMap<>();
         
         for (String person : participant) {
-            // 있으면 체이닝, 없으면 그냥 추가
+            // 있으면 +1, 없으면 그냥 추가
             if (isComplete.containsKey(person)) {
                 Integer personNum = isComplete.get(person);
                 isComplete.put(person, personNum + 1);
