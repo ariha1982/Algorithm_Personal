@@ -28,7 +28,6 @@ class Solution {
         }
         
         // 신고 메일 횟수 정리
-        ArrayList<Integer> answers = new ArrayList<>();
         map.forEach((key, val) -> {
             if (val.size() >= k) { // 신고 횟수가 k보다 클 때
                 val.forEach(id -> {
